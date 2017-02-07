@@ -1,5 +1,6 @@
 /**
  * Created by akos on 2017.02.07..
  */
-public class Value {
+public abstract class Value {
+    public abstract String[] getInputPattern();
 }
