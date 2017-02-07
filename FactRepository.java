@@ -14,4 +14,12 @@ public class FactRepository {
             return null;
         }
     }
+    public Iterator getIterator()
+    {
+        return null;
+    }
+    public void addFact(Fact fact)
+    {
+
+    }
 }
