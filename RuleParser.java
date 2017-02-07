@@ -5,6 +5,8 @@ public class RuleParser extends XmlParser
 {
     public RuleRepository getRuleRepository()
     {
-        return null;
+        RuleRepository rep = new RuleRepository();
+        rep.addQuestion("1", null);
+        return rep;
     }
 }

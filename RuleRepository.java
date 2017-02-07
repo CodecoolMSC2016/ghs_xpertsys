@@ -1,7 +1,10 @@
 /**
  * Created by akos on 2017.02.07..
  */
+
 public class RuleRepository {
+
+    Map<String, Question> questionMap = new HashMap<>();
 
     public Iterator getIterator()
     {
@@ -10,7 +13,8 @@ public class RuleRepository {
 
     public Question addQuestion(String id, Question question)
     {
-        return null;
+        questionMap.put(id, question);
+        return question;
     }
 
     class QuestionIterator implements Iterator
