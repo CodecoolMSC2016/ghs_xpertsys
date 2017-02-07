@@ -14,4 +14,12 @@ public class RuleRepository {
             return null;
         }
     }
+    public Question addQuestion(String id, Question question)
+    {
+        return null;
+    }
+    public Iterator getIterator()
+    {
+        return null;
+    }
 }
