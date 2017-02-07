@@ -2,10 +2,21 @@
  * Created by akos on 2017.02.07..
  */
 public class FactRepository {
+    public Iterator getIterator()
+    {
+        return null;
+    }
+
+    public void addFact(Fact fact)
+    {
+
+    }
+
     class FactIterator implements Iterator
     {
         @Override
-        public boolean hasnext() {
+        public boolean hasnext()
+        {
             return false;
         }
 
@@ -13,13 +24,5 @@ public class FactRepository {
         public Object next() {
             return null;
         }
-    }
-    public Iterator getIterator()
-    {
-        return null;
-    }
-    public void addFact(Fact fact)
-    {
-
     }
 }

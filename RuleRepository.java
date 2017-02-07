@@ -2,6 +2,17 @@
  * Created by akos on 2017.02.07..
  */
 public class RuleRepository {
+
+    public Iterator getIterator()
+    {
+        return null;
+    }
+
+    public Question addQuestion(String id, Question question)
+    {
+        return null;
+    }
+
     class QuestionIterator implements Iterator
     {
         @Override
@@ -13,13 +24,5 @@ public class RuleRepository {
         public Object next() {
             return null;
         }
-    }
-    public Question addQuestion(String id, Question question)
-    {
-        return null;
-    }
-    public Iterator getIterator()
-    {
-        return null;
     }
 }
