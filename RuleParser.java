@@ -1,7 +1,4 @@
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -41,10 +38,18 @@ public class RuleParser extends XmlParser
             Node node = nodeList.item(i);
 
             String id = ((Element)node).getAttribute("id");
-            String questionmsg = ((Element) node).getAttribute("question");
+            String questionmsg = ((Element) node).getElementsByTagName("Question").item(0).getTextContent();
             Question question = new Question(questionmsg);
+            Value value = generateValue(node);
             repo.addQuestion(id, question);
         }
         return repo;
+    }
+    public Value generateValue(Node node)
+    {
+        Element e = (Element) ((Element)node).getElementsByTagName("Answer");
+        e.getAttribute()
+        Value value;
+        return value;
     }
 }
