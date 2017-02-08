@@ -1,12 +1,11 @@
 import java.util.*;
 
-public class RuleRepository {
-
-
-    private HashMap<String, Question> ruleMap = new HashMap<>();
+public class RuleRepository
+{
+    LinkedHashMap<String, Question> ruleMap = new LinkedHashMap<>();
     Iterator iterator;
 
-        public RuleRepository()
+    public RuleRepository()
     {
         iterator = getIterator();
     }
@@ -24,13 +23,22 @@ public class RuleRepository {
 
     class QuestionIterator implements Iterator
     {
-        @Override
-        public boolean hasNext() {
+        int index;
+        public boolean hasNext()
+        {
+            if(index < ruleMap.size())
+            {
+                return true;
+            }
             return false;
         }
 
-        @Override
-        public Object next() {
+        public Object next()
+        {
+            if (this.hasNext())
+            {
+                return ruleMap.get(index++);
+            }
             return null;
         }
     }
