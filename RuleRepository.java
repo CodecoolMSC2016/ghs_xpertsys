@@ -2,11 +2,11 @@ import java.util.*;
 
 public class RuleRepository {
 
-public class RuleRepository
-{
+
     HashMap<String, Question> ruleMap = new HashMap<>();
-        Iterator iterator;
-    public RuleRepository()
+    Iterator iterator;
+
+        public RuleRepository()
     {
         iterator = getIterator();
     }
