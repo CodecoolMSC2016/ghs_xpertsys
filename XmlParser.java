@@ -18,40 +18,5 @@ import org.xml.sax.SAXException;
 
 public abstract class XmlParser {
 
-    public void LoadXmlDocument(String fullPath) {
-
-        String filename = "Home/Java/xpertSystem/Rules.xml";
-
-        try {
-            FileInputStream file = new FileInputStream(new File(filename));
-
-            DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
-
-            DocumentBuilder builder = builderFactory.newDocumentBuilder();
-
-            Document xmlDocument = builder.parse(file);
-
-            XPath xPath = XPathFactory.newInstance().newXPath();
-
-            String expression = "/Rules/Rule/Question";
-            System.out.println(expression);
-            NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
-            for (int i = 0; i < nodeList.getLength(); i++) {
-                System.out.println(nodeList.item(i).getFirstChild().getNodeValue());
-            }
-
-
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (XPathExpressionException e) {
-            e.printStackTrace();
-        }
-    }
+    public abstract void loadXmlDocument(String fullPath);
 }
