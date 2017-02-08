@@ -3,7 +3,7 @@ import java.util.*;
 public class RuleRepository {
 
 
-    HashMap<String, Question> ruleMap = new HashMap<>();
+    private HashMap<String, Question> ruleMap = new HashMap<>();
     Iterator iterator;
 
         public RuleRepository()
@@ -18,6 +18,7 @@ public class RuleRepository {
 
     public Question addQuestion(String id, Question question)
     {
+        ruleMap.put(id, question);
         return null;
     }
 
