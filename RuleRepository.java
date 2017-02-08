@@ -1,30 +1,30 @@
-/**
- * Created by akos on 2017.02.07..
- */
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Iterator;
-
+import java.util.*;
 
 public class RuleRepository {
 
-    Map<String, Question> questionMap = new HashMap<>();
+public class RuleRepository
+{
+    HashMap<String, Question> ruleMap = new HashMap<>();
+        Iterator iterator;
+    public RuleRepository()
+    {
+        iterator = getIterator();
+    }
 
     public Iterator getIterator()
     {
-        return null;
+         return new QuestionIterator();
     }
 
     public Question addQuestion(String id, Question question)
     {
-        questionMap.put(id, question);
-        return question;
+        return null;
     }
 
     class QuestionIterator implements Iterator
     {
         @Override
-        public boolean hasnext() {
+        public boolean hasNext() {
             return false;
         }
 
