@@ -3,6 +3,7 @@ import java.util.*;
 
 public class RuleRepository
 {
+    HashMap<String, Question> ruleMap = new HashMap<>();
         Iterator iterator;
     public RuleRepository()
     {
