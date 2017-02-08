@@ -1,11 +1,16 @@
-/**
- * Created by akos on 2017.02.07..
- */
-public class RuleRepository {
+import java.util.*;
+
+public class RuleRepository
+{
+        Iterator iterator;
+    public RuleRepository()
+    {
+        iterator = getIterator();
+    }
 
     public Iterator getIterator()
     {
-        return null;
+         return new QuestionIterator();
     }
 
     public Question addQuestion(String id, Question question)
@@ -16,7 +21,7 @@ public class RuleRepository {
     class QuestionIterator implements Iterator
     {
         @Override
-        public boolean hasnext() {
+        public boolean hasNext() {
             return false;
         }
 
