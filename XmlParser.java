@@ -1,9 +1,4 @@
-/**
- * Created by akos on 2017.02.07..
- */
-public class XmlParser {
-    public void LoadXmlDocument(String fullPath)
-    {
+public abstract class XmlParser {
 
-    }
+    public abstract void loadXmlDocument(String fullPath);
 }

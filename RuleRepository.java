@@ -16,7 +16,7 @@ public class RuleRepository
          return new QuestionIterator();
     }
 
-    public void addQuestion(String id, Question question)
+    public Question addQuestion(String id, Question question)
     {
         ruleMap.put(id, question);
     }
