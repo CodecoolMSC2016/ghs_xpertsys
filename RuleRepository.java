@@ -1,41 +1,34 @@
-/**
- * Created by akos on 2017.02.07..
- */
 import java.util.*;
-public class RuleRepository {
 
-    Map<String, Question> questionMap = new HashMap<>();
 
+public class RuleRepository
+{
+    HashMap<String, Question> ruleMap = new HashMap<>();
+        Iterator iterator;
+    public RuleRepository()
+    {
+        iterator = getIterator();
+    }
 
     public Iterator getIterator()
     {
-        return null;
+         return new QuestionIterator();
     }
 
     public Question addQuestion(String id, Question question)
     {
-        questionMap.put(id, question);
-        return question;
+        return null;
     }
 
     class QuestionIterator implements Iterator
     {
-        int index;
         @Override
-        public boolean hasnext() {
-            if (index< questionMap.size())
-            {
-                return true;
-            }
+        public boolean hasNext() {
             return false;
         }
 
         @Override
         public Object next() {
-            if (this.hasnext())
-            {
-                return questionMap[];
-            }
             return null;
         }
     }
