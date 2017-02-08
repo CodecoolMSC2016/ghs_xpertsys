@@ -1,10 +1,11 @@
 /**
  * Created by akos on 2017.02.07..
  */
-
+import java.util.*;
 public class RuleRepository {
 
     Map<String, Question> questionMap = new HashMap<>();
+
 
     public Iterator getIterator()
     {
@@ -19,13 +20,22 @@ public class RuleRepository {
 
     class QuestionIterator implements Iterator
     {
+        int index;
         @Override
         public boolean hasnext() {
+            if (index< questionMap.size())
+            {
+                return true;
+            }
             return false;
         }
 
         @Override
         public Object next() {
+            if (this.hasnext())
+            {
+                return questionMap[];
+            }
             return null;
         }
     }
