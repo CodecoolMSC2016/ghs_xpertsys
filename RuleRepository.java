@@ -1,6 +1,10 @@
 /**
  * Created by akos on 2017.02.07..
  */
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Iterator;
+
 
 public class RuleRepository {
 

@@ -1,7 +1,13 @@
 /**
  * Created by akos on 2017.02.07..
  */
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Iterator;
+
 public class FactRepository {
+
+
     public Iterator getIterator()
     {
         return null;
@@ -9,6 +15,7 @@ public class FactRepository {
 
     public void addFact(Fact fact)
     {
+
 
     }
 
