@@ -37,7 +37,7 @@ public class RuleRepository
         {
             if (this.hasNext())
             {
-                return ruleMap.keySet().toArray()[index++];
+                return ruleMap.values().toArray(new Question[ruleMap.values().size()])[index++];
             }
             return null;
         }

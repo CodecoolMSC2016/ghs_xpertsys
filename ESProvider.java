@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -5,10 +6,20 @@ import java.util.Scanner;
  * Created by akos on 2017.02.07..
  */
 public class ESProvider {
+
+    private HashMap<String, Boolean> evaluatedAnswerMap = new HashMap<>();
     private RuleRepository ruleRepository;
     private FactRepository factRepository;
     private FactParser factParser;
     private RuleParser ruleParser;
+
+    public HashMap<String, Boolean> getEvaluatedAnswerMap() {
+        return evaluatedAnswerMap;
+    }
+
+    public void setEvaluatedAnswerMap(String id, Boolean value) {
+        evaluatedAnswerMap.put(id, value);
+    }
 
     public ESProvider(FactParser factParser, RuleParser ruleParser)
     {
@@ -44,6 +55,12 @@ public class ESProvider {
     }
     public String evaluate()
     {
+        for (Map.Entry<String, Question> e : ruleRepository.ruleMap.entrySet())
+        {
+            e.getValue().getEvaluatedAnswer()
+
+        }
+
         return null;
     }
 

@@ -4,8 +4,15 @@
 public class Answer
 {
     private Value value;
+
     public boolean evaluateAnswerByInput(String input)
     {
+        for (int i = 0; i < value.getTrueValue().length ; i++) {
+            if(value.getTrueValue()[i].equals(input))
+            {
+                return true;
+            }
+        }
         return false;
     }
 
