@@ -1,934 +1,322 @@
 <KM>
-
     <Fact id="airplane">
-
-        <Description value="Travel by plane please...or by underground!" />
-
+        <Description value="Travel by plane please...or by underground!"/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="gokart">
-
-        <Description value="Look for a gokart!" />
-
+        <Description value="Look for a gokart!"/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="suv">
-
-        <Description value="KIA Sportage is a good choice for you." />
-
+        <Description value="KIA Sportage is a good choice for you."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="beach">
-
-        <Description value="Go to the beach and enjoy the sunshine." />
-
+        <Description value="Go to the beach and enjoy the sunshine."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="big">
-
-        <Description value="You should buy a Land Rover Discovery." />
-
+        <Description value="You should buy a Land Rover Discovery."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="bmw">
-
-        <Description value="You should buy a BMW." />
-
+        <Description value="You should buy a BMW."/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="transit">
-
-        <Description value="A nice Ford Transit would be a good choice for you." />
-
+        <Description value="A nice Ford Transit would be a good choice for you."/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="jeep">
-
-        <Description value="Look for a Jeep!" />
-
+        <Description value="Look for a Jeep!"/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="barkas">
-
-        <Description value="Wow, a Barkas is worth trying." />
-
+        <Description value="Wow, a Barkas is worth trying."/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="vitara">
-
-        <Description value="A Suzuki Vitara is a good choice for you." />
-
+        <Description value="A Suzuki Vitara is a good choice for you."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="x6">
-
-        <Description value="Buy a BMW X5 with a very very big sunroof." />
-
+        <Description value="Buy a BMW X5 with a very very big sunroof."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="gmerci">
-
-        <Description value="A nice Mercedes G-class should be a good choice for you." />
-
+        <Description value="A nice Mercedes G-class should be a good choice for you."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="ural">
-
-        <Description value="Ural is a very big off-road truck, there won't be any traffic jam or barrier that you can't handle." />
-
+        <Description value="Ural is a very big off-road truck, there won't be any traffic jam or barrier that you can't handle."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="infinity">
-
-        <Description value="Look for a beautiful Infinity." />
-
+        <Description value="Look for a beautiful Infinity."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="tuning">
-
-        <Description value="Pimp your ride!!!" />
-
+        <Description value="Pimp your ride!!!"/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="velorex">
-
-        <Description value="Do you know Velorex? Look for it." />
-
+        <Description value="Do you know Velorex? Look for it."/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="astracc">
-
-        <Description value="Go and find an Opel Astra CC." />
-
+        <Description value="Go and find an Opel Astra CC."/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="lada">
-
-        <Description value="Have you tried a Lada 1600 yet? Go for it!" />
-
+        <Description value="Have you tried a Lada 1600 yet? Go for it!"/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="transporter">
-
-        <Description value="Make a cabrio from a Transporter!" />
-
+        <Description value="Make a cabrio from a Transporter!"/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="roomier">
-
-        <Description value="Buy a family car! How about a roomier one, e.g. Fiat Multipla. " />
-
+        <Description value="Buy a family car! How about a roomier one, e.g. Fiat Multipla. "/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="sight">
-
-        <Description value="How about a sightseeing bus?" />
-
+        <Description value="How about a sightseeing bus?"/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="samurai">
-
-        <Description value="Go and buy a Suzuki Samurai." />
-
+        <Description value="Go and buy a Suzuki Samurai."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="rover">
-
-        <Description value="What do you think about a Range Rover?" />
-
+        <Description value="What do you think about a Range Rover?"/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="pickup">
-
-        <Description value="Buy a Toyota Hilux!" />
-
+        <Description value="Buy a Toyota Hilux!"/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="range">
-
-        <Description value="Do you know the Cabrio Range Rover? You should try to drive it at least once in your lifetime." />
-
+        <Description value="Do you know the Cabrio Range Rover? You should try to drive it at least once in your lifetime."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="cc">
-
-        <Description value="Try a cabrio coupe, e.g. Audi TT coupe." />
-
+        <Description value="Try a cabrio coupe, e.g. Audi TT coupe."/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
     <Fact id="smart">
-
-        <Description value="How about a city car? Maybe a Smart?" />
-
+        <Description value="How about a city car? Maybe a Smart?"/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="hummer">
-
-        <Description value="Probably a Hummer Cabrio is the best for you." />
-
+        <Description value="Probably a Hummer Cabrio is the best for you."/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="bus">
-
-        <Description value="You need a bus!" />
-
+        <Description value="You need a bus!"/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="jimny">
-
-        <Description value="Suzuki Jimny is the best choice for you." />
-
+        <Description value="Suzuki Jimny is the best choice for you."/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="volvosmart">
-
-        <Description value="A Smart Cabrio would be great! But a Volvo is also a good choice. You could drive both." />
-
+        <Description value="A Smart Cabrio would be great! But a Volvo is also a good choice. You could drive both."/>
         <Evals>
-
-            <Eval id="where">true
-
-            </Eval>
-
-            <Eval id="seats">true
-
-            </Eval>
-
-            <Eval id="sport">true
-
-            </Eval>
-
-            <Eval id="cabrio">true
-
-            </Eval>
-
-            <Eval id="license">true
-
-            </Eval>
-
+            <Eval id="where">true</Eval>
+            <Eval id="seats">true</Eval>
+            <Eval id="sport">true</Eval>
+            <Eval id="cabrio">true</Eval>
+            <Eval id="license">true</Eval>
         </Evals>
-
     </Fact>
     <Fact id="cessna">
-
-        <Description value="Get a pilot license and buy a Cessna!" />
-
+        <Description value="Get a pilot license and buy a Cessna!"/>
         <Evals>
-
-            <Eval id="where">false
-
-            </Eval>
-
-            <Eval id="seats">false
-
-            </Eval>
-
-            <Eval id="sport">false
-
-            </Eval>
-
-            <Eval id="cabrio">false
-
-            </Eval>
-
-            <Eval id="license">false
-
-            </Eval>
-
+            <Eval id="where">false</Eval>
+            <Eval id="seats">false</Eval>
+            <Eval id="sport">false</Eval>
+            <Eval id="cabrio">false</Eval>
+            <Eval id="license">false</Eval>
         </Evals>
-
     </Fact>
-
-
-
 </KM>
