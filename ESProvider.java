@@ -5,12 +5,14 @@ import java.util.Map;
  */
 public class ESProvider {
     private RuleRepository ruleRepository;
+    private FactRepository factRepository;
     private FactParser factParser;
     private RuleParser ruleParser;
 
     public ESProvider(FactParser factParser, RuleParser ruleParser)
     {
-        RuleRepository ruleRepository = ruleParser.getRuleRepository();
+        ruleRepository = ruleParser.getRuleRepository();
+        factRepository = factParser.getFactRepository();
         this.factParser = factParser;
         this.ruleParser = ruleParser;
     }
@@ -36,6 +38,15 @@ public class ESProvider {
             System.out.println(e.getKey());
             System.out.println(e.getValue().getQuestion());
 
+        }
+        for(Fact fact:factRepository.facts){
+            System.out.println(fact.getDescription());
+            System.out.println(fact.getIDSet());
+
+            for (Map.Entry<String, Boolean> e : fact.evalMap.entrySet())
+            {
+                System.out.println(e.getValue() + "\t" + e.getKey());
+            }
         }
     }
 }

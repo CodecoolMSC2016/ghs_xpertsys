@@ -3,7 +3,7 @@ import java.util.Iterator;
 
 public class FactRepository {
 
-    ArrayList<Fact> facts;
+    ArrayList<Fact> facts = new ArrayList<>();
 
     public Iterator getIterator()
     {

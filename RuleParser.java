@@ -19,7 +19,7 @@ public class RuleParser extends XmlParser
             DocumentBuilder builder = builderFactory.newDocumentBuilder();
             Document xmlDocument = builder.parse(file);
             xmlDocument.getDocumentElement().normalize();
-            NodeList nodeList = xmlDocument.getElementsByTagName("Rule");
+            nodeList = xmlDocument.getElementsByTagName("Rule");
 
         }
         catch (Exception e)
@@ -30,7 +30,7 @@ public class RuleParser extends XmlParser
 
     public RuleRepository getRuleRepository()
     {
-        String filename = "";
+        String filename = "Rules.xml";
         loadXmlDocument(filename);
         RuleRepository repo = new RuleRepository();
         for(int i = 0; i<nodeList.getLength(); i++)
