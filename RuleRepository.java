@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 public class RuleRepository
 {
     LinkedHashMap<String, Question> ruleMap = new LinkedHashMap<>();
@@ -25,7 +24,6 @@ public class RuleRepository
     class QuestionIterator implements Iterator
     {
         int index;
-        @Override
         public boolean hasNext()
         {
             if(index < ruleMap.size())
@@ -35,7 +33,6 @@ public class RuleRepository
             return false;
         }
 
-        @Override
         public Object next()
         {
             if (this.hasNext())

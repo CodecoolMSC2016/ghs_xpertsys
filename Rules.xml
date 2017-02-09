@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Rules>
+    <Rule id="where">
+        <Question>Where would you like to use mostly your car? (1 = highway, 2 = in the city, 3 = offroad)</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue>1,2</MultipleValue>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue>3</MultipleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="seats">
+        <Question>Usually how many people would travel in your car? (1,2,3,4,5/ 6 = more than 5)</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue>1,2,3,4,5</MultipleValue>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue>6</MultipleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="sport">
+        <Question>How would you go in a parking area? (a = beautifully - rules applied, b = just through everything)</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue>a</SingleValue>
+            </Selection>
+            <Selection value="false">
+                <SingleValue>b</SingleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="cabrio">
+        <Question>Would you like to feel the sunshine on your head? (y = yes, n = no)</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue>y</SingleValue>
+            </Selection>
+            <Selection value="false">
+                <SingleValue>n</SingleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="license">
+        <Question>Can you even drive a car or you just have a driving license? (y = yes, n = no)</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue>y</SingleValue>
+            </Selection>
+            <Selection value="false">
+                <SingleValue>n</SingleValue>
+            </Selection>
+        </Answer>
+    </Rule>
+</Rules>

@@ -3,9 +3,11 @@
  */
 public class Question
 {
+    private Answer answerEvaluator;
+    private String question;
     public Question(String question)
     {
-
+        this.question = question;
     }
     public String getQuestion()
     {
