@@ -5,8 +5,6 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathFactory;
 import java.io.File;
 import java.io.FileInputStream;
 
@@ -23,10 +21,8 @@ public class FactParser extends XmlParser
         String description = "";
         loadXmlDocument(fileName);
 
-
         for(int i = 0; i < nodeList.getLength(); i++)
         {
-
             Node node = nodeList.item(i);
             Node tempNode = ((Element) node).getElementsByTagName("Description").item(0);
             description = ((Element)tempNode).getAttribute("value");
@@ -66,7 +62,6 @@ public class FactParser extends XmlParser
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = dbFactory.newDocumentBuilder();
             Document xmlDocument = builder.parse(file);
-
             xmlDocument.getDocumentElement().normalize();
 
             nodeList = xmlDocument.getElementsByTagName("Fact");

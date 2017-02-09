@@ -1,8 +1,5 @@
 import java.util.*;
 
-/**
- * Created by akos on 2017.02.07..
- */
 public class ESProvider {
 
     private HashMap<String, Boolean> evaluatedAnswerMap = new HashMap<>();
@@ -93,7 +90,8 @@ public class ESProvider {
     public boolean deBug(String[]args)
     {
         boolean debugStatus = false;
-        if (args[0] == "debug"){
+        if (args[0].equals("debug")){
+            debugStatus = true;
             return debugStatus;
         }
         return false;
