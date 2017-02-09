@@ -90,4 +90,12 @@ public class ESProvider {
             }
         }
     }
+    public boolean deBug(String[]args)
+    {
+        boolean debugStatus = false;
+        if (args[0] == "debug"){
+            return debugStatus;
+        }
+        return false;
+    }
 }
