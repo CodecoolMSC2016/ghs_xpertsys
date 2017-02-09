@@ -19,6 +19,7 @@ public class RuleRepository
     public Question addQuestion(String id, Question question)
     {
         ruleMap.put(id, question);
+        return null;
     }
 
     class QuestionIterator implements Iterator
