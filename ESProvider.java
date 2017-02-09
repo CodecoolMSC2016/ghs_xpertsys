@@ -1,3 +1,5 @@
+import java.util.Map;
+
 /**
  * Created by akos on 2017.02.07..
  */
@@ -27,4 +29,13 @@ public class ESProvider {
         return null;
     }
 
+    void debugPrintStats()
+    {
+        for (Map.Entry<String, Question> e : ruleRepository.ruleMap.entrySet())
+        {
+            System.out.println(e.getKey());
+            System.out.println(e.getValue().getQuestion());
+
+        }
+    }
 }
