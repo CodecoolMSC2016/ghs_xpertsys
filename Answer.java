@@ -20,4 +20,9 @@ public class Answer
     {
         this.value = value;
     }
+    public String[] getInputPattern()
+    {
+        return value.getInputPattern();
+
+    }
 }
