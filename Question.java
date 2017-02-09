@@ -29,6 +29,6 @@ public class Question
     {
         Boolean bool = answerEvaluator.evaluateAnswerByInput(input);
 
-        return false;
+        return bool;
     }
 }

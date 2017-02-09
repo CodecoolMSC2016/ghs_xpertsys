@@ -30,9 +30,9 @@ public class ESProvider {
     public void collectAnswers()
     {
 
-        boolean b = false;
+
         for (Map.Entry<String, Question> e : ruleRepository.ruleMap.entrySet())
-        {
+        {   boolean b = false;
             Question question = e.getValue();
             while(!b)
             {
@@ -60,12 +60,15 @@ public class ESProvider {
     }
     public String evaluate()
     {
-        for (Map.Entry<String, Question> e : ruleRepository.ruleMap.entrySet())
+        for (Fact fact:factRepository.facts)
         {
-            e.getValue().getEvaluatedAnswer()
 
+
+            if(evaluatedAnswerMap.equals(fact.evalMap))
+            {
+                return fact.getDescription();
+            }
         }
-
         return null;
     }
 
