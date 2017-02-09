@@ -3,6 +3,8 @@
  */
 public class Question
 {
+
+
     private Answer answerEvaluator;
     private String question;
     public Question(String question)
@@ -13,6 +15,12 @@ public class Question
     {
         return question;
     }
+
+    public Answer getAnswerEvaluator()
+    {
+        return answerEvaluator;
+    }
+
     public void setAnswerEvaluator(Answer answer)
     {
         this.answerEvaluator = answer;
