@@ -8,6 +8,7 @@ public class ESProvider {
 
     private HashMap<String, Boolean> evaluatedAnswerMap = new HashMap<>();
     private RuleRepository ruleRepository;
+    private FactRepository factRepository;
     private FactParser factParser;
     private RuleParser ruleParser;
 
@@ -21,7 +22,8 @@ public class ESProvider {
 
     public ESProvider(FactParser factParser, RuleParser ruleParser)
     {
-        RuleRepository ruleRepository = ruleParser.getRuleRepository();
+        ruleRepository = ruleParser.getRuleRepository();
+        factRepository = factParser.getFactRepository();
         this.factParser = factParser;
         this.ruleParser = ruleParser;
     }
@@ -46,4 +48,22 @@ public class ESProvider {
         return null;
     }
 
+    void debugPrintStats()
+    {
+        for (Map.Entry<String, Question> e : ruleRepository.ruleMap.entrySet())
+        {
+            System.out.println(e.getKey());
+            System.out.println(e.getValue().getQuestion());
+
+        }
+        for(Fact fact:factRepository.facts){
+            System.out.println(fact.getDescription());
+            System.out.println(fact.getIDSet());
+
+            for (Map.Entry<String, Boolean> e : fact.evalMap.entrySet())
+            {
+                System.out.println(e.getValue() + "\t" + e.getKey());
+            }
+        }
+    }
 }

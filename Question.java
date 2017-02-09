@@ -11,7 +11,7 @@ public class Question
     }
     public String getQuestion()
     {
-        return null;
+        return question;
     }
     public void setAnswerEvaluator(Answer answer)
     {

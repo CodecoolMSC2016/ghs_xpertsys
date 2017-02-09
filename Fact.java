@@ -8,7 +8,7 @@ import java.util.*;
 public class Fact
 {
     private String id;
-    private HashMap<String, Boolean> evalMap;
+    public HashMap<String, Boolean> evalMap = new HashMap<>();
     private String description;
 
     public void setId(String id)

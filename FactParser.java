@@ -28,7 +28,7 @@ public class FactParser extends XmlParser
         {
 
             Node node = nodeList.item(i);
-            Node tempNode = ((Element) node).getElementsByTagName("description").item(0);
+            Node tempNode = ((Element) node).getElementsByTagName("Description").item(0);
             description = ((Element)tempNode).getAttribute("value");
 
             String factId = ((Element)node).getAttribute("id");
@@ -69,7 +69,7 @@ public class FactParser extends XmlParser
 
             xmlDocument.getDocumentElement().normalize();
 
-            NodeList nodeList = xmlDocument.getElementsByTagName("Fact");
+            nodeList = xmlDocument.getElementsByTagName("Fact");
 
         }
         catch (Exception e)
