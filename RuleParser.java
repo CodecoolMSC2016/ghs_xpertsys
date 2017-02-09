@@ -48,7 +48,7 @@ public class RuleParser extends XmlParser
     public Value generateValue(Node node)
     {
         Element e = (Element) ((Element)node).getElementsByTagName("Answer");
-        e.getAttribute()
+        e.getAttribute();
         Value value;
         return value;
     }
