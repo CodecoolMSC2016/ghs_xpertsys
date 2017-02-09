@@ -38,18 +38,37 @@ public class RuleParser extends XmlParser
             Node node = nodeList.item(i);
 
             String id = ((Element)node).getAttribute("id");
-            String questionmsg = ((Element) node).getElementsByTagName("Question").item(0).getTextContent();
-            Question question = new Question(questionmsg);
+            String questionMsg = ((Element) node).getElementsByTagName("Question").item(0).getTextContent();
+            Question question = new Question(questionMsg);
             Value value = generateValue(node);
+            Answer answer = new Answer();
+            answer.addValue(value);
+            question.setAnswerEvaluator(answer);
             repo.addQuestion(id, question);
         }
         return repo;
     }
     public Value generateValue(Node node)
     {
-        Element e = (Element) ((Element)node).getElementsByTagName("Answer");
-        e.getAttribute()
         Value value;
-        return value;
+        Node answerNode = ((Element)node).getElementsByTagName("Answer").item(0);
+        NodeList selections = ((Element)answerNode).getElementsByTagName("Selection");
+        Node trueSel = selections.item(0), falseSel = selections.item(1);
+        for(int i=0;i<trueSel.getChildNodes().getLength();i++)
+        {
+            if(trueSel.getChildNodes().item(i).getNodeName() == "SingleValue")
+            {
+                value = new SingleValue(trueSel.getTextContent());
+                ((SingleValue) value).setFalseValue(falseSel.getTextContent());
+                return value;
+            }
+            else if(trueSel.getChildNodes().item(i).getNodeName() == "MultipleValue")
+            {
+                value = new MultipleValue(trueSel.getTextContent());
+                ((MultipleValue) value).setFalseValues(falseSel.getTextContent());
+                return value;
+            }
+        }
+        return null;
     }
 }
