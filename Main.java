@@ -4,10 +4,18 @@ public class Main {
         ESProvider provider = new ESProvider(new FactParser(), new RuleParser());
         if(args.length > 0)
         {
-            if(provider.deBug(args)) provider.debugPrintStats();
+            if(provider.deBug(args)){
+                provider.debugPrintStats();
+            }
         }
         provider.collectAnswers();
         System.out.println(provider.evaluate());
+        if(args.length > 0)
+        {
+            if(provider.deBug(args)){
+                provider.debugFunctions();
+            }
+        }
     }
 
 

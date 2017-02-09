@@ -3,7 +3,7 @@ import java.util.*;
 public class RuleRepository
 {
     LinkedHashMap<String, Question> ruleMap = new LinkedHashMap<>();
-    Iterator iterator;
+    public Iterator iterator;
 
     public RuleRepository()
     {
@@ -23,21 +23,26 @@ public class RuleRepository
 
     class QuestionIterator implements Iterator
     {
-        int index;
+        int index = 0;
         public boolean hasNext()
         {
-            if(index < ruleMap.size())
+            if(index < ruleMap.size()-1)
             {
+                System.out.println("Index while inside hasNext(): " + index);
                 return true;
             }
             return false;
         }
 
-        public Object next()
+        public Question next()
         {
             if (this.hasNext())
             {
-                return ruleMap.values().toArray(new Question[ruleMap.values().size()])[index++];
+                Question question = ruleMap.values().toArray(new Question[ruleMap.values().size()])[index++];
+                System.out.println("Question inside next(): " + question.getQuestion());
+                System.out.println("Index while inside next(): " + index);
+                return question;
+
             }
             return null;
         }

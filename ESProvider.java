@@ -9,6 +9,10 @@ public class ESProvider {
     private RuleParser ruleParser;
 
     public HashMap<String, Boolean> getEvaluatedAnswerMap() {
+        for(Map.Entry<String, Boolean> entry : evaluatedAnswerMap.entrySet())
+        {
+            System.out.println("Question ID:\t" + entry.getKey() + "Evaluation:\t" + entry.getValue());
+        }
         return evaluatedAnswerMap;
     }
 
@@ -26,8 +30,6 @@ public class ESProvider {
 
     public void collectAnswers()
     {
-
-
         for (Map.Entry<String, Question> e : ruleRepository.ruleMap.entrySet())
         {   boolean b = false;
             Question question = e.getValue();
@@ -53,7 +55,7 @@ public class ESProvider {
 
     public boolean getAnswerByQuestion(String QuestionID)
     {
-        return false;
+       return evaluatedAnswerMap.get(QuestionID);
     }
     public String evaluate()
     {
@@ -96,4 +98,56 @@ public class ESProvider {
         }
         return false;
     }
+    public void iteratorTest()
+    {
+
+        Iterator iterator = ruleRepository.iterator;
+        while(iterator.hasNext())
+        {
+            System.out.println(ruleRepository.ruleMap.size());
+            Object question = iterator.next();
+            System.out.println(((Question) question).getQuestion());
+        }
+    }
+    public void debugFunctions()
+    {
+        System.out.print("Welcome to the debug menu, please enter the instruction:\t");
+        Scanner userIn = new Scanner(System.in);
+        String order = userIn.nextLine();
+        boolean whileBreaker = false;
+        while (!whileBreaker)
+        {
+            switch (order)
+            {
+                case "getquestion":
+                    System.out.print("ID you want to see:\t");
+                    System.out.println(getAnswerByQuestion(userIn.nextLine()));
+                    System.out.print("please enter the instruction:\t");
+                    order = userIn.nextLine();
+                    break;
+                case "print":
+                    getEvaluatedAnswerMap();
+                    System.out.print("please enter the instruction:\t");
+                    order = userIn.nextLine();
+                    break;
+                case "seteval":
+                    System.out.print("ID you want to change:\t");
+                    String id = userIn.nextLine();
+                    System.out.print("\nvalue you want to change:\t");
+                    boolean value = userIn.nextBoolean();
+                    setEvaluatedAnswerMap(id,value);
+                    System.out.print("please enter the instruction:\t");
+                    order = userIn.nextLine();
+                    break;
+                case "exit":
+                    whileBreaker = !whileBreaker;
+                    break;
+                default:
+                    System.out.print("please enter the instruction:\t");
+                    order = userIn.nextLine();
+                    break;
+            }
+        }
+    }
+
 }
