@@ -1,13 +1,9 @@
-/**
- * Created by akos on 2017.02.07..
- */
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class FactRepository {
 
-
+    ArrayList<Fact> facts;
 
     public Iterator getIterator()
     {
@@ -16,8 +12,7 @@ public class FactRepository {
 
     public void addFact(Fact fact)
     {
-
-
+        facts.add(fact);
     }
 
     class FactIterator implements Iterator
@@ -26,7 +21,7 @@ public class FactRepository {
         @Override
         public boolean hasNext()
         {
-            if(index< tokomfaszomgolyoja.size())
+            if(index< facts.size())
             {
                 return true;
             }
@@ -39,7 +34,7 @@ public class FactRepository {
         {
             if(this.hasNext())
             {
-                return tokomfaszomgolyoja.get(index++);
+                return facts.get(index++);
             }
 
             return null;
