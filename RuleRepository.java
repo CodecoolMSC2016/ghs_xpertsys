@@ -37,7 +37,7 @@ public class RuleRepository
         {
             if (this.hasNext())
             {
-                return ruleMap.get(index++);
+                return ruleMap.keySet().toArray()[index++];
             }
             return null;
         }

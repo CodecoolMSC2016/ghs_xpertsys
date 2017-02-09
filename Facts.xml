@@ -2,7 +2,7 @@
 
     <Fact id="airplane">
 
-        <Description value="Travel please by plane...or by underground!" />
+        <Description value="Travel by plane please...or by underground!" />
 
         <Evals>
 
@@ -60,7 +60,7 @@
     </Fact>
     <Fact id="suv">
 
-        <Description value="KIA Sportage a good choice for you." />
+        <Description value="KIA Sportage is a good choice for you." />
 
         <Evals>
 
@@ -89,7 +89,7 @@
     </Fact>
     <Fact id="beach">
 
-        <Description value="Go to the beach to have some sunshine." />
+        <Description value="Go to the beach and enjoy the sunshine." />
 
         <Evals>
 
@@ -234,7 +234,7 @@
     </Fact>
     <Fact id="barkas">
 
-        <Description value="Wow, a barkas is worth trying." />
+        <Description value="Wow, a Barkas is worth trying." />
 
         <Evals>
 
@@ -321,7 +321,7 @@
     </Fact>
     <Fact id="gmerci">
 
-        <Description value="A nice Mercedes G-class shoulb be a good choice for you." />
+        <Description value="A nice Mercedes G-class should be a good choice for you." />
 
         <Evals>
 
@@ -350,7 +350,7 @@
     </Fact>
     <Fact id="ural">
 
-        <Description value="Ural is a very big off-road truck, there will be no traffic jam or any barrier you cannot handle." />
+        <Description value="Ural is a very big off-road truck, there won't be any traffic jam or barrier that you can't handle." />
 
         <Evals>
 
@@ -379,7 +379,7 @@
     </Fact>
     <Fact id="infinity">
 
-        <Description value="Look for a beautifull Infinity." />
+        <Description value="Look for a beautiful Infinity." />
 
         <Evals>
 
@@ -553,7 +553,7 @@
     </Fact>
     <Fact id="roomier">
 
-        <Description value="Buy a family car! How about a roomier, e.g. Fiat Multipla. " />
+        <Description value="Buy a family car! How about a roomier one, e.g. Fiat Multipla. " />
 
         <Evals>
 
@@ -669,7 +669,7 @@
     </Fact>
     <Fact id="pickup">
 
-        <Description value="Buy a Toyota Hilux" />
+        <Description value="Buy a Toyota Hilux!" />
 
         <Evals>
 
@@ -698,7 +698,7 @@
     </Fact>
     <Fact id="range">
 
-        <Description value="Do you know Range Rover Cabrio? You should try to drive it at least once in your lifetime." />
+        <Description value="Do you know the Cabrio Range Rover? You should try to drive it at least once in your lifetime." />
 
         <Evals>
 
@@ -756,7 +756,7 @@
     </Fact>
     <Fact id="smart">
 
-        <Description value="How about a city car? Smart?" />
+        <Description value="How about a city car? Maybe a Smart?" />
 
         <Evals>
 
@@ -785,7 +785,7 @@
     </Fact>
     <Fact id="hummer">
 
-        <Description value="Maybe a Hummer Cabrio is the best for you." />
+        <Description value="Probably a Hummer Cabrio is the best for you." />
 
         <Evals>
 

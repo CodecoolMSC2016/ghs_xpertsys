@@ -6,7 +6,6 @@ public class Answer
     private Value value;
     public boolean evaluateAnswerByInput(String input)
     {
-        if(value.)
         return false;
     }
 
