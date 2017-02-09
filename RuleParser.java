@@ -58,14 +58,14 @@ public class RuleParser extends XmlParser
         {
             if(trueSel.getChildNodes().item(i).getNodeName() == "SingleValue")
             {
-                value = new SingleValue(trueSel.getTextContent());
-                ((SingleValue) value).setFalseValue(falseSel.getTextContent());
+                value = new SingleValue(trueSel.getTextContent().trim());
+                ((SingleValue) value).setFalseValue(falseSel.getTextContent().trim());
                 return value;
             }
             else if(trueSel.getChildNodes().item(i).getNodeName() == "MultipleValue")
             {
-                value = new MultipleValue(trueSel.getTextContent());
-                ((MultipleValue) value).setFalseValues(falseSel.getTextContent());
+                value = new MultipleValue(trueSel.getTextContent().trim());
+                ((MultipleValue) value).setFalseValues(falseSel.getTextContent().trim());
                 return value;
             }
         }
