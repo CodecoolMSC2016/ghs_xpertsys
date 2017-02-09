@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by akos on 2017.02.07..
@@ -32,19 +30,26 @@ public class ESProvider {
     public void collectAnswers()
     {
 
-
+        boolean b = false;
         for (Map.Entry<String, Question> e : ruleRepository.ruleMap.entrySet())
         {
-            while
+            Question question = e.getValue();
+            while(!b)
             {
-                System.out.println(e.getValue().getQuestion());
+                System.out.println(question.getQuestion());
                 Scanner scan = new Scanner(System.in);
                 String answer = scan.next();
 
-                boolean b;
-                for (int i = 0; i < e.getValue().getAnswerEvaluator(). ; i++) {
+
+                ArrayList<String> inputPattern = new ArrayList<>
+                        (Arrays.asList(question.getAnswerEvaluator().getInputPattern()));
+                if(inputPattern.contains(answer))
+                {
+                    evaluatedAnswerMap.put(e.getKey(), question.getEvaluatedAnswer(answer));
+                    b = true;
 
                 }
+
             }
         }
     }
