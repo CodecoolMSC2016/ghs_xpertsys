@@ -7,7 +7,16 @@ import java.util.Arrays;
  */
 public class MultipleValue extends Value{
     String[] trueValues;
+
     String[] falseValues;
+
+    public String[] getTrueValue() {
+        return trueValues;
+    }
+
+    public String[] getFalseValue() {
+        return falseValues;
+    }
 
     public MultipleValue(String param)
     {
