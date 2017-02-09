@@ -31,7 +31,7 @@ public class ESProvider {
 
     public void collectAnswers()
     {
-        Question q = new Question();
+
 
         for (Map.Entry<String, Question> e : ruleRepository.ruleMap.entrySet())
         {
@@ -42,7 +42,7 @@ public class ESProvider {
                 String answer = scan.next();
 
                 boolean b;
-                for (int i = 0; i < q.getAnswerEvaluator(). ; i++) {
+                for (int i = 0; i < e.getValue().getAnswerEvaluator(). ; i++) {
 
                 }
             }
