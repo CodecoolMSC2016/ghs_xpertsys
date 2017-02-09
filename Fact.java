@@ -1,33 +1,49 @@
-import java.util.Set;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
-/**
- * Created by akos on 2017.02.07..
- */
-public class Fact {
+import java.util.*;
+
+public class Fact
+{
+    private String id;
+    private HashMap<String, Boolean> evalMap;
+    private String description;
+
+    public void setId(String id)
+    {
+        this.id = id;
+    }
+
+
     public Fact(String description)
     {
-
+        this.description = description;
     }
+
     public void setFactValueByID(String id, boolean value)
     {
-        /* Display content using Iterator*/
-        Set set = factMap.entrySet();
-        Iterator iterator = set.iterator();
-        while(iterator.hasNext()) {
-            Map.Entry mentry = (Map.Entry)iterator.next();
-            System.out.print("key is: "+ mentry.getKey() + " & Value is: ");
-            System.out.println(mentry.getValue());
+        evalMap.put(id, value);
     }
+    
     public Set<String> getIDSet()
     {
-        return null;
+        Set<String> idSet = new HashSet<>();
+        for (Map.Entry<String, Boolean> e : evalMap.entrySet())
+        {
+            idSet.add(e.getKey());
+        }
+        return idSet;
+       
     }
-    public boolean getValueByID()
+    public boolean getValueByID(String evalId)
     {
-        return false;
+       return evalMap.get(evalId);
     }
     public String getDescription()
     {
-        return null;
+        return description;
     }
+
 }
