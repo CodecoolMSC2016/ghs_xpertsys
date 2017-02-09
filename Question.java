@@ -16,9 +16,9 @@ public class Question
         return question;
     }
 
-    public Answer getAnswerEvaluator()
+    public String[] getInputPattern()
     {
-        return answerEvaluator;
+        return answerEvaluator.getInputPattern();
     }
 
     public void setAnswerEvaluator(Answer answer)

@@ -42,7 +42,7 @@ public class ESProvider {
 
 
                 ArrayList<String> inputPattern = new ArrayList<>
-                        (Arrays.asList(question.getAnswerEvaluator().getInputPattern()));
+                        (Arrays.asList(question.getInputPattern()));
                 if(inputPattern.contains(answer))
                 {
                     evaluatedAnswerMap.put(e.getKey(), question.getEvaluatedAnswer(answer));
