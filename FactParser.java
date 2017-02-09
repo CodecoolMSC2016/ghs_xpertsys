@@ -1,4 +1,6 @@
 import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.xpath.XPath;
@@ -15,25 +17,29 @@ public class FactParser extends XmlParser
     }
 
     @Override
-    public void loadXmlDocument(String fullPath) {
-        String filename = "Home/Java/xpertSystem/Rules.xml";
+    public void loadXmlDocument(String fullPath)
+    {
+        fullPath = "Home/Java/xpertSystem/Facts.xml";
 
-        try {
-            FileInputStream file = new FileInputStream(new File(filename));
-
-            DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
-
-            DocumentBuilder builder = builderFactory.newDocumentBuilder();
-
+        try
+        {
+            FileInputStream file = new FileInputStream(new File(fullPath));
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = dbFactory.newDocumentBuilder();
             Document xmlDocument = builder.parse(file);
 
-            XPath xPath = XPathFactory.newInstance().newXPath();
+            xmlDocument.getDocumentElement().normalize();
 
         }
         catch (Exception e)
         {
-            e.printStackTrace();
+            System.out.println("An error occurred during object initialization.");
         }
+    }
+
+    public void parseXml(String fileName)
+    {
+        Document doc = loadXmlDocument(fileName);
     }
 }
 
