@@ -11,7 +11,7 @@ public class ESProvider {
     public HashMap<String, Boolean> getEvaluatedAnswerMap() {
         for(Map.Entry<String, Boolean> entry : evaluatedAnswerMap.entrySet())
         {
-            System.out.println("Question ID:\t" + entry.getKey() + "Evaluation:\t" + entry.getValue());
+            System.out.println("Question ID:\t" + entry.getKey() + "\tEvaluation:\t" + entry.getValue());
         }
         return evaluatedAnswerMap;
     }
