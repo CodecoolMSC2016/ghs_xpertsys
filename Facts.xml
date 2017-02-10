@@ -140,7 +140,7 @@
         </Evals>
     </Fact>
     <Fact id="tuning">
-        <Description value="Pimp your ride!!!"/>
+        <Description value="Pimp your own ride!!!"/>
         <Evals>
             <Eval id="where">false</Eval>
             <Eval id="seats">false</Eval>
